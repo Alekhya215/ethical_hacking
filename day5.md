@@ -2,11 +2,11 @@
   <h1>Day - 5 of CEH</h1>
 </div>
 
-# Footprinting & Reconnaissance
+ # Footprinting & Reconnaissance
 
----
+ ---
 
-## Footprinting
+# Footprinting
 
 - Footprinting is the process of gathering information about a target **system, network, or organization**.
 - It helps understand the **structure of the target** and identify **potential points of entry**.
@@ -16,9 +16,10 @@
   - Networks
   - Security posture of the organization
 
-<p align="center">
-  <img src="images/107.jpg" alt="Steps for hacking" width="600">
-</p>
+  <center>
+  <img src="images/107.png" alt="steps for hacking" width="600">
+</center>
+
 
 ---
 
@@ -26,9 +27,10 @@
 
 Footprinting is classified into the following two types:
 
-<p align="center">
-  <img src="images/108.jpg" alt="Types of footprinting" width="600">
-</p>
+<center>
+  <img src="images/108.png" alt="steps for hacking" width="600">
+</center>
+
 
 ### 1. Passive Footprinting
 - Information is collected **without directly interacting** with the target system or network.
@@ -47,7 +49,7 @@ Footprinting is classified into the following two types:
 - More likely to be detected by security systems.
 
 **Example:**
-- Using **social engineering techniques** to interact with employees
+- Using **social engineering techniques** to interact with employees and obtain organizational or technical information
 
 ---
 
@@ -60,16 +62,19 @@ Footprinting is classified into the following two types:
   - IP address ranges
   - Subdomains
   - Hosting providers
+- Helps understand the organization’s **online presence and technology stack**.
 
 ---
 
 ### 2. Footprinting Through Social Networking Sites
-- Collects information from social media platforms.
+- Gathers information from social media platforms.
 - Identifies:
   - Employee names
   - Job roles
   - Locations
   - Technologies used
+  - Organizational hierarchy
+- Supports **social engineering analysis**.
 
 ---
 
@@ -80,6 +85,8 @@ Footprinting is classified into the following two types:
   - Application frameworks
   - Directories
   - Links
+  - Content disclosures
+- Helps understand website structure and technologies.
 
 ---
 
@@ -89,6 +96,8 @@ Footprinting is classified into the following two types:
   - Email addresses
   - Email formats
   - Mail servers
+  - Security mechanisms
+- Reveals internal communication structure.
 
 ---
 
@@ -97,117 +106,277 @@ Footprinting is classified into the following two types:
 - Retrieves:
   - Domain ownership
   - Registrar details
-  - Registration dates
+  - Registration and expiration dates
+  - Administrative and technical contacts
+- Helps identify key organizational and network details.
 
 ---
 
 ## Information Obtained in Footprinting
 
 ### 1. Network Information
-- IP address ranges
-- Domain names
-- DNS records
-- Subdomains
-- ISP details
+- Details related to network infrastructure.
+- Includes:
+  - IP address ranges
+  - Network blocks
+  - Domain names
+  - DNS records
+  - Subdomains
+  - Network topology
+  - Routing information
+  - Internet Service Providers (ISP)
 
 ---
 
 ### 2. System Information
-- Operating systems
-- Servers
-- Databases
-- Security mechanisms
+- Details about hardware and software systems.
+- Includes:
+  - Operating systems
+  - Servers
+  - Applications
+  - Web servers
+  - Databases
+  - Security mechanisms
+- Helps identify technologies and vulnerabilities.
 
 ---
 
 ### 3. Organizational Information
-- Employees
-- Departments
-- Job roles
-- Physical locations
+- Details about organizational structure.
+- Includes:
+  - Employees
+  - Departments
+  - Job roles
+  - Email formats
+  - Physical locations
+  - Business operations
+  - Internal policies
+- Useful for hierarchy analysis and social engineering.
 
 ---
 
 ## Ping Command
 
 ### Purpose
-- Checks **reachability** of a target host
-- Identifies **active hosts**
-- Measures network latency
+- Checks the **reachability** of a target host.
+- Determines whether the system is **alive**.
+- Helps identify **active hosts** and network latency.
+
+---
+
+### Information Obtained Using Ping
+- Whether the target system is online
+- Round-trip time
+- Packet loss
+- Network connectivity status 
+
+
+---
+
 
 ### Steps
 - **Step 1:** Open Terminal
-- **Step 2:** Type  
-  `ping <target>`
+- **Step 2:** type
+ping <target>
 
-<p align="center">
-  <img src="images/109.jpg" alt="Ping command" width="600">
-</p>
+<center>
+  <img src="images/109.png" alt="steps for hacking" width="600">
+</center>
 
----
+-
 
 ## Footprinting Tools and Services
 
-### 1. Wappalyzer
-<p align="center">
-  <img src="images/112.jpg" width="600">
-</p>
+### 1. Wappalyzer 
 
-<p align="center">
-  <img src="images/113.jpg" width="600">
-</p>
 
-<p align="center">
-  <img src="images/114.jpg" width="600">
-</p>
+<center>
+  <img src="images/112.png" alt="steps for hacking" width="600">
+</center>
+
+- Identifies technologies used on a website.
+- Detects:
+  - Web servers
+  - CMS
+  - Frameworks
+  - Programming languages
+  - Analytics tools
+- Used in website footprinting.
+
+<center>
+  <img src="images/113.png" alt="steps for hacking" width="600">
+</center>
+
+  - we can see the detals of technologies used in a particular website.
+  - for example i have taken microsoft.com
+
+  <center>
+  <img src="images/114.png" alt="steps for hacking" width="600">
+</center>
+
+
+
 
 ---
 
-### 2. WHOIS Database
-<p align="center">
-  <img src="images/115.jpg" width="600">
-</p>
+### 2. WHOIS Database 
 
-<p align="center">
-  <img src="images/116.jpg" width="600">
-</p>
+
+
+- Public repository of domain and IP registration details.
+- Contains:
+  - Domain owner
+  - Registrar
+  - Registration and expiration dates
+  - Administrative contacts 
+  <center>
+  <img src="images/115.png" alt="steps for hacking" width="600">
+</center>
+
+  - we can use whois command in terminal also
+  - open terminal and type "whois <databasename>"
+  - we can see the database details in terminal
+
+  <center>
+  <img src="images/116.png" alt="steps for hacking" width="600">
+</center>
+
+  
 
 ---
 
 ### 3. WHOIS Lookup
-- Retrieves domain ownership and registrar details
+- Process of querying the WHOIS database.
+- Retrieves:
+  - Ownership information
+  - Domain age
+  - Registrar details
+  - Contact records 
 
 ---
 
 ### 4. Fake Name Generator
-<p align="center">
-  <img src="images/117.jpg" width="600">
-</p>
 
-<p align="center">
-  <img src="images/118.jpg" width="600">
-</p>
+<center>
+  <img src="images/117.png" alt="steps for hacking" width="600">
+</center> 
 
+- Generates synthetic personal identities.
+- Includes:
+  - Name
+  - Address
+  - Email
+  - Phone number
+- Used for testing and privacy protection.
+
+
+<center>
+  <img src="images/118.png" alt="steps for hacking" width="600">
+</center>
 ---
 
 ### 5. This Person Does Not Exist
-<p align="center">
-  <img src="images/119.jpg" width="600">
-</p>
+- Generates AI-created realistic human faces.
+- Images do not belong to real individuals.
+- Demonstrates digital identity simulation.
+
+<center>
+  <img src="images/119.png" alt="steps for hacking" width="600">
+</center>
 
 ---
 
 ### 6. Grabify
-<p align="center">
-  <img src="images/120.jpg" width="600">
-</p>
+- Generates trackable links.
+- Collects:
+  - IP address
+  - Browser type
+  - Operating system
+  - Approximate location
+- Demonstrates information leakage through interaction.
+
+<center>
+  <img src="images/120.png" alt="steps for hacking" width="600">
+</center>
+
 
 ---
 
 ### 7. IP Lookup
-- Retrieves geographic and network details of an IP address
+- Retrieves geographical and network details of an IP address.
+- Provides:
+  - Country
+  - Region
+  - ISP
+  - Organization information
 
 ---
 
 ### 8. I Know What You Download
-<p alig
+- Displays publicly visible torrent activity linked to an IP address.
+- Shows:
+  - File names
+  - Download timestamps
+  - Torrent hashes
+- Uses public BitTorrent tracking data.
+- Does not directly identify individuals.
+- Demonstrates privacy risks of public data exposure.
+
+<center>
+  <img src="images/121.png" alt="steps for hacking" width="600">
+</center>
+
+---
+
+## Hound Tool Installation and Execution 
+
+
+### Step 1: Search for hound in the browser
+
+<center>
+  <img src="images/122.png" alt="steps for hacking" width="600">
+</center>
+
+- Open **Terminal** from the Applications menu  
+  
+
+
+### Step 2: Clone the Hound Repository
+
+git clone https://github.com/techchipnet/hound.git
+
+### Step 3: Navigate to the Hound Directory
+
+cd hound
+
+### Step 4: Give Execute Permission
+chmod +x hound.sh
+
+Grants permission to execute the Hound script
+
+<center>
+  <img src="images/124.png" alt="steps for hacking" width="600">
+</center>
+
+
+### Step 5: Run the Hound Tool
+./hound.sh
+
+Executes the Hound tool.
+The tool is now ready for use in information gathering.
+
+<center>
+  <img src="images/123.png" alt="steps for hacking" width="600">
+</center>
+
+
+
+
+
+
+
+
+
+
+
+

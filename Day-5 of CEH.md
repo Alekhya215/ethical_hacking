@@ -369,13 +369,3 @@ The tool is now ready for use in information gathering.
 <center>
   <img src="images/123.jpeg" alt="steps for hacking" width="600">
 </center>
-
-
-
-
-
-
-
-
-
-

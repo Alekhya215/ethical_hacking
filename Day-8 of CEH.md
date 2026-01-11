@@ -16,7 +16,7 @@ Networks enable:
 In computer networks, data is sent and received in small units called **packets**. Each packet contains part of the data along with addressing information. When you visit a website, these packets travel across the network and are reassembled at your device.
 
 <center>
-  <img src="images/178.png" alt="steps for hacking" width="600">
+  <img src="images/178.jpg" alt="steps for hacking" width="600">
 </center>
 
 ---
@@ -27,7 +27,7 @@ In computer networks, data is sent and received in small units called **packets*
 A Network Interface Controller (NIC) is a hardware component that connects a device to a network. It can be wired (Ethernet) or wireless (Wi-Fi). Each NIC has a unique MAC address.
 
 <center>
-  <img src="images/179.png" alt="steps for hacking" width="600">
+  <img src="images/179.jpg" alt="steps for hacking" width="600">
 </center>
 
 ### Protocol
@@ -35,14 +35,14 @@ A protocol is a standardized set of rules that defines how data is formatted, tr
 Examples: TCP/IP, HTTP, HTTPS, FTP.
 
 <center>
-  <img src="images/180.png" alt="steps for hacking" width="600">
+  <img src="images/180.jpg" alt="steps for hacking" width="600">
 </center>
 
 ### Hub
 A hub is a basic networking device that connects multiple devices in a network. It broadcasts data to all connected devices, making it inefficient and insecure. Hubs are mostly obsolete.
 
 <center>
-  <img src="images/181.jpeg" alt="steps for hacking" width="600">
+  <img src="images/181.jpg" alt="steps for hacking" width="600">
 </center>
 
 ### Switch
@@ -80,7 +80,7 @@ Network scanning is an important phase in **network management, troubleshooting,
 ## Types of Network Scanning
 
 <center>
-  <img src="images/184.jpeg" alt="steps for hacking" width="600">
+  <img src="images/184.jpg" alt="steps for hacking" width="600">
 </center>
 
 ### 1. Network Scanning
@@ -174,7 +174,7 @@ Example:
 192.149.252.76
 
 <center>
-  <img src="images/187.jpeg" alt="steps for hacking" width="600">
+  <img src="images/187.jpg" alt="steps for hacking" width="600">
 </center>
 
 ### IPv6
@@ -284,7 +284,7 @@ The `ping` command is used to test connectivity between two devices on a network
 ## ARP (Address Resolution Protocol)
 
 <center>
-  <img src="images/192.jpeg" alt="steps for hacking" width="600">
+  <img src="images/192.jpg" alt="steps for hacking" width="600">
 </center>
 
 ### What is ARP?
